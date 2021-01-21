@@ -24,7 +24,7 @@ const insertUserFeedbackInfoInToDOM = (score, infoFeedback) => {
     <h4 class="alert-heading">${title}</h4>
     <p class="h6">Você marcou ${score} pontos em um total de 100 pontos.</p>
     <hr>
-    <p class="mb-0 lead">Recaregue a página para tentar novamente ;)</p>
+    <p class="mb-0 lead">Recarregue a página para tentar novamente ;)</p>
   `
 }
 
