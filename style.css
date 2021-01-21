@@ -1,0 +1,11 @@
+html,
+boby {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(26deg, #212529, #1d2124);
+}
+.intro, .btn {
+  background: linear-gradient(26deg, #28a745, #0062cc);
+}
