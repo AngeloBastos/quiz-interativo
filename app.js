@@ -19,6 +19,7 @@ const errorMessageFeedback = {
 
 const insertUserFeedbackInfoInToDOM = (score, infoFeedback) => {
   const { title, className, referenceTag } = infoFeedback
+
   referenceTag.setAttribute('class',`alert ${className}`)
   referenceTag.innerHTML = `
     <h4 class="alert-heading">${title}</h4>
@@ -31,6 +32,7 @@ const insertUserFeedbackInfoInToDOM = (score, infoFeedback) => {
 const showMessageAlertUserFeedback = () => {
   if (score === 0) {
     form.style.display = 'none'
+    
     insertUserFeedbackInfoInToDOM(score,errorMessageFeedback)
     return
   }
@@ -41,6 +43,7 @@ const showMessageAlertUserFeedback = () => {
 
 const sumScoreOfUser = (userAnswer, index) => {
   const isCorrectAnswer = userAnswer === correctAnswers[index]
+
   if (isCorrectAnswer) {
     score += 20
   }
